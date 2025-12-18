@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Rina Fitriani</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f9f9f9;
+        }
+
+        /* ===== NAVBAR ===== */
+        nav {
+            background-color: #6fa3b8;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== SECTION ===== */
+        section {
+            padding: 80px 40px;
+            text-align: center;
+        }
+
+        #home {
+            height: 90vh;
+            background-color: #dff1f7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #home span {
+            color: #2f6f88;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #2f6f88;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        #skills {
+            background-color: #f1f1f1;
+        }
+
+        /* ===== SKILLS ===== */
+        .skills-box {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: #6fa3b8;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 20px;
+        }
+
+        /* ===== CONTACT ===== */
+        form {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2f6f88;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #6fa3b8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+    <h2>Rina Fitriani</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ===== HOME ===== -->
+<section id="home">
+    <h1>Halo, Saya <span>Rina Fitriani</span></h1>
+    <p>Mahasiswi | Web Developer Pemula</p>
+    <a href="#contact" class="btn">Hubungi Saya</a>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Saya adalah Rina Fitriani, seorang mahasiswi yang tertarik
+        pada pengembangan website sederhana. Saya senang belajar
+        teknologi dan meningkatkan kemampuan digital.
+    </p>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-box">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Basic JavaScript</div>
+        <div class="skill">Microsoft Office</div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Rina Fitriani" required>
+        <input type="email" placeholder="rnftranee@gmail.com" required>
+        <textarea placeholder="Pesan" required></textarea>
+        <button type="submit">Kirim</button>
+    </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2025 Rina Fitriani | Simple Portfolio</p>
+</footer>
+
+</body>
+</html>
